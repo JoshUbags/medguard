@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1420" height="1000" viewBox="0 0 1420 1000" font-family="Arial, Helvetica, sans-serif">
+<defs><marker id="ah" markerWidth="11" markerHeight="11" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#000"/></marker></defs>
+<rect width="1420" height="1000" fill="#FFFFFF"/>
+<g fill="none" stroke="#000" stroke-width="2">
+<rect x="60" y="360" width="380" height="270"/><line x1="60" y1="404" x2="440" y2="404"/>
+<rect x="980" y="60" width="380" height="150"/><line x1="980" y1="104" x2="1360" y2="104"/>
+<rect x="980" y="250" width="380" height="120"/><line x1="980" y1="294" x2="1360" y2="294"/>
+<rect x="980" y="410" width="380" height="120"/><line x1="980" y1="454" x2="1360" y2="454"/>
+<rect x="980" y="570" width="380" height="170"/><line x1="980" y1="614" x2="1360" y2="614"/>
+<rect x="980" y="780" width="380" height="120"/><line x1="980" y1="824" x2="1360" y2="824"/>
+</g>
+<g fill="#000" font-size="24" font-weight="700" text-anchor="middle">
+<text x="250" y="393">drugs</text><text x="1170" y="93">interactions</text><text x="1170" y="283">drug_synonyms</text><text x="1170" y="443">drug_categories</text><text x="1170" y="603">drug_enzymes</text><text x="1170" y="813">food_interactions</text>
+</g>
+<g fill="#000" font-size="20">
+<text x="80" y="444">id  PK</text><text x="80" y="476">drugbank_id</text><text x="80" y="508">name · atc_code</text><text x="80" y="540">half_life · drug_class</text><text x="80" y="572">generic_name · rxcui</text>
+<text x="1000" y="144">drug_a_id · drug_b_id  FK</text><text x="1000" y="176">severity · severity_int</text><text x="1000" y="200">mechanism · clinical_effect</text>
+<text x="1000" y="334">drug_id  FK · synonym · source</text>
+<text x="1000" y="494">drug_id  FK · category · mesh_id</text>
+<text x="1000" y="654">drug_id  FK</text><text x="1000" y="686">enzyme_name · gene_name</text><text x="1000" y="718">actions (subs/inhib/induc)</text>
+<text x="1000" y="864">drug_id  FK · description</text>
+</g>
+<g fill="none" stroke="#000" stroke-width="2">
+<line x1="440" y1="495" x2="700" y2="495"/>
+<line x1="700" y1="135" x2="700" y2="840"/>
+<line x1="700" y1="135" x2="978" y2="135" marker-end="url(#ah)"/>
+<line x1="700" y1="310" x2="978" y2="310" marker-end="url(#ah)"/>
+<line x1="700" y1="470" x2="978" y2="470" marker-end="url(#ah)"/>
+<line x1="700" y1="655" x2="978" y2="655" marker-end="url(#ah)"/>
+<line x1="700" y1="840" x2="978" y2="840" marker-end="url(#ah)"/>
+</g>
+<g fill="#000" font-size="22" font-weight="700"><text x="662" y="486">1</text><text x="946" y="127">N</text><text x="946" y="302">N</text><text x="946" y="462">N</text><text x="946" y="647">N</text><text x="946" y="832">N</text></g>
+<g fill="#000" font-size="18" font-style="italic" text-anchor="middle">
+<text x="810" y="126">interacts in</text><text x="810" y="301">has</text><text x="810" y="461">classified in</text><text x="810" y="646">metabolised by</text><text x="810" y="831">has</text>
+</g>
+</svg>

@@ -1,0 +1,39 @@
+# Render.com deployment manifest for the MedGuard API.
+#
+# 1. In Render, create a Blueprint from this repository and point it at
+#    `backend/render.yaml`.
+# 2. Upload the Firebase service-account JSON as a Secret File and set
+#    MEDGUARD_FIREBASE_CREDENTIALS to its path.
+# 3. The service is ready once `GET /api/health` returns 200.
+#
+# The image already contains the clinical database and the served model, so
+# nothing else needs supplying.
+
+services:
+  - type: web
+    name: medguard-api
+    runtime: docker
+    plan: free
+    region: oregon
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: .
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      # Firebase service-account JSON used to verify ID tokens. Without it the
+      # API rejects every authenticated call with 503.
+      - key: MEDGUARD_FIREBASE_CREDENTIALS
+        sync: false
+      # Comma-separated browser origins allowed by CORS. Empty denies all
+      # browsers, which is right while the only client is the mobile app
+      # (native HTTP clients do not enforce CORS).
+      - key: MEDGUARD_ALLOWED_ORIGINS
+        value: ""
+      - key: GUNICORN_WORKERS
+        value: "2"
+      - key: GUNICORN_TIMEOUT
+        value: "60"
+      # Rate-limit store. Point at a managed Redis URL to share limits across
+      # instances.
+      - key: MEDGUARD_RATE_STORE
+        value: memory://

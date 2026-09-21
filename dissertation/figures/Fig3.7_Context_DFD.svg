@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="820" viewBox="0 0 1300 820" font-family="Arial, Helvetica, sans-serif">
+<defs><marker id="ah" markerWidth="11" markerHeight="11" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#000"/></marker></defs>
+<rect width="1300" height="820" fill="#FFFFFF"/>
+<g fill="none" stroke="#000" stroke-width="2">
+<circle cx="640" cy="410" r="150"/>
+<rect x="60" y="350" width="240" height="120"/>
+<rect x="520" y="60" width="240" height="110"/>
+<rect x="980" y="350" width="260" height="120"/>
+</g>
+<g fill="#000" text-anchor="middle" font-size="26" font-weight="700"><text x="640" y="405">MedGuard</text><text x="180" y="415">User</text><text x="640" y="122">Firebase</text><text x="1110" y="400">Data Sources</text></g>
+<g fill="#000" text-anchor="middle" font-size="18" font-style="italic"><text x="640" y="435">(single process 0)</text><text x="180" y="440">patient / clinician</text><text x="640" y="146">auth provider</text><text x="1110" y="426">DrugBank · RxNorm</text></g>
+<g fill="none" stroke="#000" stroke-width="2">
+<line x1="300" y1="392" x2="488" y2="392" marker-end="url(#ah)"/>
+<line x1="488" y1="428" x2="302" y2="428" marker-end="url(#ah)"/>
+<line x1="640" y1="170" x2="640" y2="258" marker-end="url(#ah)"/>
+<line x1="980" y1="410" x2="792" y2="410" marker-end="url(#ah)"/>
+</g>
+<g fill="#000" text-anchor="middle" font-size="19" font-style="italic"><text x="394" y="382">medication query</text><text x="394" y="452">severity alert</text><text x="700" y="220">auth token</text><text x="886" y="392">reference data</text></g>
+</svg>

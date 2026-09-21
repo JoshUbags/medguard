@@ -1,0 +1,7 @@
+{
+  "n_features": 27,
+  "tflite_bytes": 7984,
+  "distillation": "soft-label (student trained on RF predict_proba)",
+  "agreement_rf_mlp_with_rule": 0.9564,
+  "mlp_high_recall_with_rule": 0.8803
+}

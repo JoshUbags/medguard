@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1480" height="770" viewBox="0 0 1480 770" font-family="Arial, Helvetica, sans-serif">
+<defs><marker id="ah" markerWidth="11" markerHeight="11" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#000"/></marker></defs>
+<rect width="1480" height="770" fill="#FFFFFF"/>
+<g fill="none" stroke="#000" stroke-width="2">
+<rect x="40" y="50" width="740" height="680"/>
+<rect x="80" y="120" width="660" height="100"/>
+<rect x="80" y="280" width="660" height="100"/>
+<rect x="80" y="440" width="660" height="100"/>
+<rect x="80" y="600" width="660" height="90"/>
+<rect x="860" y="50" width="580" height="300"/>
+<rect x="900" y="120" width="500" height="90"/>
+<rect x="900" y="230" width="500" height="90"/>
+<rect x="860" y="410" width="580" height="320"/>
+<rect x="900" y="480" width="500" height="100"/>
+<rect x="900" y="600" width="500" height="100"/>
+</g>
+<g fill="#000" text-anchor="middle" font-size="25" font-weight="700">
+<text x="410" y="160">Presentation Layer</text><text x="410" y="332">Application Logic Layer</text><text x="410" y="492">Data &amp; Model Layer</text>
+<text x="1150" y="98">Cloud Tier (optional)</text><text x="1150" y="458">Build Tier (run once)</text>
+</g>
+<g fill="#000" text-anchor="middle" font-size="21">
+<text x="410" y="194">Search · Safety Report · Reminders</text>
+<text x="410" y="366">InteractionChecker · DatabaseService · ML service</text>
+<text x="410" y="526">medguard.db · encrypted User DB · TFLite model</text>
+<text x="410" y="638" font-size="23" font-weight="700">Fallback chain</text><text x="410" y="668">Rule DB → Cloud RF → on-device TFLite</text>
+<text x="1150" y="158" font-weight="700" font-size="23">Flask API</text><text x="1150" y="190">Random Forest · /predict</text>
+<text x="1150" y="268" font-weight="700" font-size="23">Firebase Auth</text><text x="1150" y="300">identity token only</text>
+<text x="1150" y="518" font-weight="700" font-size="23">Data pipeline</text><text x="1150" y="550">DrugBank · RxNorm · OpenFDA · DDInter</text>
+<text x="1150" y="638" font-weight="700" font-size="23">ML pipeline</text><text x="1150" y="670">27 features · calibrate · TFLite export</text>
+</g>
+<g fill="none" stroke="#000" stroke-width="2">
+<line x1="410" y1="220" x2="410" y2="278" marker-end="url(#ah)"/>
+<line x1="410" y1="380" x2="410" y2="438" marker-end="url(#ah)"/>
+<line x1="410" y1="540" x2="410" y2="598" marker-end="url(#ah)"/>
+<line x1="780" y1="170" x2="858" y2="170" marker-end="url(#ah)"/>
+<line x1="860" y1="530" x2="782" y2="530" marker-end="url(#ah)"/>
+</g>
+<g fill="#000" font-size="18" font-style="italic" text-anchor="middle">
+<text x="819" y="160">HTTPS · online</text>
+<text x="821" y="520">bundled assets</text>
+</g>
+</svg>

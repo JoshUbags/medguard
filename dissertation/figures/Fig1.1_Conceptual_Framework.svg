@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="980" viewBox="0 0 1440 980" font-family="Arial, Helvetica, sans-serif">
+<defs><marker id="ah" markerWidth="11" markerHeight="11" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#000"/></marker></defs>
+<rect width="1440" height="980" fill="#FFFFFF"/>
+<g fill="#000" font-size="22" font-weight="700"><text x="40" y="46">Data Sources Layer</text><text x="40" y="286">Data Processing Layer</text><text x="140" y="516">Machine Learning Layer</text><text x="780" y="516">Application Layer</text><text x="510" y="796">Output</text></g>
+<g fill="none" stroke="#000" stroke-width="2">
+<rect x="40" y="66" width="300" height="90"/><rect x="370" y="66" width="300" height="90"/><rect x="700" y="66" width="300" height="90"/><rect x="1030" y="66" width="300" height="90"/>
+<rect x="40" y="306" width="1290" height="100"/>
+<rect x="140" y="536" width="520" height="140"/>
+<rect x="780" y="536" width="520" height="140"/>
+<rect x="510" y="816" width="420" height="120"/>
+</g>
+<g fill="#000" text-anchor="middle" font-size="24" font-weight="700"><text x="190" y="120">DrugBank</text><text x="520" y="120">RxNorm</text><text x="850" y="120">OpenFDA</text><text x="1180" y="120">DDInter</text></g>
+<g fill="#000" text-anchor="middle" font-size="21">
+<text x="685" y="362">parse · normalise · classify severity · engineer features</text>
+<text x="400" y="596">train &amp; compare classifiers</text><text x="400" y="626">calibrate · Flask API · TFLite</text>
+<text x="1040" y="596">bundled database · rule checks</text><text x="1040" y="626">regimen safety report</text>
+<text x="720" y="866">colour-coded severity</text><text x="720" y="896">Low · Moderate · High</text>
+</g>
+<g fill="none" stroke="#000" stroke-width="2">
+<line x1="190" y1="156" x2="190" y2="304" marker-end="url(#ah)"/>
+<line x1="520" y1="156" x2="520" y2="304" marker-end="url(#ah)"/>
+<line x1="850" y1="156" x2="850" y2="304" marker-end="url(#ah)"/>
+<line x1="1180" y1="156" x2="1180" y2="304" marker-end="url(#ah)"/>
+<line x1="400" y1="406" x2="400" y2="534" marker-end="url(#ah)"/>
+<line x1="1040" y1="406" x2="1040" y2="534" marker-end="url(#ah)"/>
+<path d="M400,676 V876 H508" marker-end="url(#ah)"/>
+<path d="M1040,676 V876 H932" marker-end="url(#ah)"/>
+</g>
+<g fill="#000" font-size="18" font-style="italic">
+<text x="884" y="230">extract</text>
+<text x="410" y="475">features</text>
+<text x="1050" y="475">bundled DB</text>
+<text x="300" y="770">risk tier</text>
+<text x="945" y="770">findings</text>
+</g>
+</svg>

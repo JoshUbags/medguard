@@ -1,0 +1,7 @@
+Study,Algorithm,Dataset,Key Metrics,Task,Limitations
+Deng et al. (2020),Multimodal deep learning,DrugBank (multi-feature),Accuracy: 88.5%; AUPR: 0.92,DDI event type prediction,Requires multi-modal features; computationally expensive
+Yu et al. (2021) – SumGNN,GNN + knowledge graph summarization,"DrugBank, TWOSIDES",F1 improvement up to 5.54%,DDI prediction with explainability,Computational cost at large scale
+Ma & Lei (2023) – DGNN-DDI,Dual GNN with co-attention,DrugBank,"Outperformed SSI-DDI, GMPNN-CS",Substructure-level DDI,Chemical structure only; no pharmacological features
+Zhang et al. (2023) – EmerGNN,Flow-based GNN on biomedical network,DrugBank + biomedical KG,"AUROC, AUPR, F1 (best in class)",Emerging drug DDI (cold-start),Requires large biomedical KG; not mobile-deployable
+Pham et al. (2024) – DeepARV,Ensemble deep learning (ChemBERTa + RF baselines),Liverpool DDI Database,Balanced accuracy: 0.776,4-class severity classification,ARV drugs only; class imbalance
+Wu et al. (2024) – RxBERT,BERT pre-trained on FDA drug labels,FDA labelling corpus + TAC 2017,F1: 86.5 (NER); Accuracy: 87%,Drug label text mining and NER,Requires GPU; not mobile-deployable on-device

@@ -1,0 +1,8 @@
+Database,Data Type,Coverage,Access Model,License,Role in This Project
+DrugBank 6.0,"DDIs, targets, enzymes, pathways, molecular properties","~17,000 drugs; ~2.6 million DDI entries",Web download (XML),Free academic license,Primary interaction database; ML training features
+RxNorm (NLM),"Standardized drug names, RxCUIs, relationships","US-marketed drugs (brand, generic, ingredient levels)",REST API and bulk download,Public domain,Drug name normalization and disambiguation
+OpenFDA FAERS,"Adverse event reports, drug–event co-occurrences",>32 million reports (2004–present),REST API (JSON),US government open data,Supplementary pharmacovigilance signals for ML features
+WHO ATC,Therapeutic classification hierarchy (5 levels),All marketed drugs globally,Online index,WHO Collaborating Centre,Duplicate therapy detection by therapeutic class
+Some Other Drug Interaction Databases and Knowledge Bases,Some Other Drug Interaction Databases and Knowledge Bases,Some Other Drug Interaction Databases and Knowledge Bases,Some Other Drug Interaction Databases and Knowledge Bases,Some Other Drug Interaction Databases and Knowledge Bases,Some Other Drug Interaction Databases and Knowledge Bases
+DDInter 2.0,"DDIs with mechanisms, severity","2,310 drugs; 302K DDIs",Web interface,Free/open,Validation reference; severity benchmarking
+SIDER,Drug side effects from labels,"1,430 drugs; 140K pairs",Free download,Creative Commons,ML feature enrichment (side effect profiles)

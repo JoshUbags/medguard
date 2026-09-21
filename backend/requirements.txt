@@ -1,0 +1,11 @@
+flask>=3.0,<4.0
+flask-cors>=4.0,<6.0
+flask-limiter>=3.5,<4.0
+firebase-admin>=6.5,<7.0
+gunicorn>=21.2,<24.0
+joblib>=1.3,<2.0
+numpy>=2.0,<3.0
+pandas>=2.0,<4.0
+# The served model is a pickle: it must be loaded by the scikit-learn release
+# that trained it (ml_pipeline/models/bundled_db). Retrain before bumping this.
+scikit-learn==1.9.0

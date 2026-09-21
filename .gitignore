@@ -1,0 +1,114 @@
+# ---------- OS ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+
+# Office lock and recovery files
+~$*
+~WRL*.tmp
+*.tmp
+
+# ---------- Editors ----------
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
+.history/
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+ENV/
+.env
+.env.*
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+coverage.xml
+*.egg-info/
+dist/
+build/
+.ipynb_checkpoints/
+
+# ---------- Flutter ----------
+mobile/.dart_tool/
+mobile/.flutter-plugins
+mobile/.flutter-plugins-dependencies
+mobile/.packages
+mobile/.pub-cache/
+mobile/.pub/
+mobile/build/
+mobile/ios/Pods/
+mobile/ios/.symlinks/
+mobile/ios/Flutter/Flutter.framework
+mobile/ios/Flutter/Flutter.podspec
+mobile/android/.gradle/
+mobile/android/captures/
+mobile/android/gradlew
+mobile/android/gradlew.bat
+mobile/android/local.properties
+mobile/android/**/gradle-wrapper.jar
+mobile/**/generated_plugin_registrant.*
+# pubspec.lock is committed: it pins exact dependency versions so every
+# machine and CI run builds the same app.
+
+# ---------- Secrets (never commit) ----------
+# Release signing. Only key.properties.example is tracked.
+mobile/android/key.properties
+mobile/android/*.jks
+mobile/android/*.keystore
+# Server credentials. The client configs (google-services.json and
+# firebase_options.dart) hold public identifiers only, and are tracked.
+backend/firebase-adminsdk-*.json
+**/serviceAccountKey.json
+credentials.json
+*.key
+*.pem
+secrets/
+.secrets/
+
+# ---------- Data ----------
+# The raw DrugBank export: large, and each user needs their own account.
+ml_pipeline/data/raw/*
+!ml_pipeline/data/raw/.gitkeep
+# Regenerated from the bundled database; see ml_pipeline/README.md.
+ml_pipeline/data/interim/*
+!ml_pipeline/data/interim/.gitkeep
+ml_pipeline/data/processed/*.csv
+ml_pipeline/data/processed/*.parquet
+
+# ---------- Models ----------
+# The served model in models/bundled_db/ is tracked. A retrain writing to
+# models/ itself stays local until it is deliberately promoted.
+ml_pipeline/models/*.pkl
+ml_pipeline/models/*.joblib
+ml_pipeline/models/*.onnx
+ml_pipeline/models/*.keras
+ml_pipeline/models/*.tflite
+ml_pipeline/reports/*.html
+ml_pipeline/reports/*.pdf
+
+# ---------- Databases ----------
+*.sqlite
+*.sqlite3
+*.db-journal
+# Runtime audit log written by the backend.
+backend/*.db
+# Scratch copies beside the shipped database (medguard.db itself is tracked).
+mobile/assets/db/*.bak
+mobile/assets/db/*.orig
+mobile/assets/db/_*.db
+mobile/assets/db/dev_*.db
+*.pre-optimise
+# Per-device user databases created when the app or its tests run locally.
+mobile/*.db

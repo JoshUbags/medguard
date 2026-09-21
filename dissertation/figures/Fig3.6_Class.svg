@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1560" height="980" viewBox="0 0 1560 980" font-family="Arial, Helvetica, sans-serif">
+<defs><marker id="ah" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,1 L11,6 L0,11" fill="none" stroke="#000" stroke-width="2"/></marker>
+<marker id="tri" markerWidth="20" markerHeight="18" refX="18" refY="9" orient="auto"><path d="M1,1 L18,9 L1,17 z" fill="#FFFFFF" stroke="#000" stroke-width="2"/></marker></defs>
+<rect width="1560" height="980" fill="#FFFFFF"/>
+<g fill="none" stroke="#000" stroke-width="2">
+<rect x="60" y="70" width="420" height="200"/><line x1="60" y1="114" x2="480" y2="114"/><line x1="60" y1="156" x2="480" y2="156"/>
+<rect x="560" y="70" width="420" height="170"/><line x1="560" y1="146" x2="980" y2="146"/>
+<rect x="1060" y="70" width="420" height="150"/><line x1="1060" y1="114" x2="1480" y2="114"/>
+<rect x="60" y="480" width="420" height="180"/><line x1="60" y1="524" x2="480" y2="524"/>
+<rect x="560" y="480" width="420" height="190"/><line x1="560" y1="524" x2="980" y2="524"/>
+<rect x="1060" y="480" width="420" height="180"/><line x1="1060" y1="524" x2="1480" y2="524"/>
+<rect x="560" y="770" width="420" height="150"/><line x1="560" y1="814" x2="980" y2="814"/>
+<rect x="1060" y="770" width="420" height="150"/><line x1="1060" y1="814" x2="1480" y2="814"/>
+</g>
+<g fill="#000" font-size="23" font-weight="700" text-anchor="middle">
+<text x="270" y="102">InteractionChecker</text><text x="770" y="126">MlPredictionService</text><text x="1270" y="102">ApiService</text>
+<text x="270" y="512">DatabaseService</text><text x="770" y="512">TfliteSeverityPredictor</text><text x="1270" y="512">SafetyReport</text>
+<text x="770" y="802">InteractionFeatureBuilder</text><text x="1270" y="802">Severity</text>
+</g>
+<g fill="#000" font-size="18">
+<text x="770" y="102" text-anchor="middle" font-style="italic">«interface»</text>
+<text x="80" y="146">- db · predictor · api</text>
+<text x="80" y="186">+ analyze()</text><text x="80" y="218">+ run() : SafetyReport</text><text x="80" y="250">- mlFallback()</text>
+<text x="580" y="182">+ ensureLoaded()</text><text x="580" y="216">+ predict(features)</text>
+<text x="1080" y="152">+ predictPair(a, b)</text><text x="1080" y="188">/predict · Random Forest</text>
+<text x="80" y="562">+ checkAllInteractions()</text><text x="80" y="596">+ checkDuplicateTherapy()</text><text x="80" y="630">+ getDrugById()</text>
+<text x="580" y="564">+ predict(features)</text><text x="580" y="600">- decision rule</text><text x="580" y="636">High 0.40 / Low 0.75</text>
+<text x="1080" y="564">+ verdict : Severity</text><text x="1080" y="598">+ interactions · allergies</text><text x="1080" y="632">+ fromAnalysis()</text>
+<text x="580" y="856">+ buildFeatures(a, b)</text><text x="580" y="890">27-feature vector</text>
+<text x="1080" y="858">minor / moderate /</text><text x="1080" y="890">major / contraindicated</text>
+</g>
+<g fill="none" stroke="#000" stroke-width="2">
+<line x1="480" y1="150" x2="558" y2="150" marker-end="url(#ah)"/>
+<line x1="270" y1="270" x2="270" y2="478" marker-end="url(#ah)"/>
+<path d="M270,68 V34 H1270 V68" marker-end="url(#ah)"/>
+<line x1="980" y1="575" x2="1058" y2="575" marker-end="url(#ah)"/>
+<line x1="770" y1="670" x2="770" y2="768" marker-end="url(#ah)"/>
+<line x1="1270" y1="660" x2="1270" y2="768" marker-end="url(#ah)"/>
+</g>
+<line x1="770" y1="480" x2="770" y2="242" stroke="#000" stroke-width="2" stroke-dasharray="8 6" marker-end="url(#tri)" fill="none"/>
+<g fill="#000" font-size="17" font-style="italic">
+<text x="500" y="140">uses</text><text x="284" y="380">uses</text><text x="1000" y="565">produces</text><text x="784" y="360">«realize»</text><text x="784" y="724">uses</text><text x="1284" y="720">maps to</text><text x="640" y="28">uses</text>
+</g>
+</svg>

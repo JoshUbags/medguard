@@ -1,0 +1,56 @@
+MedGuard
+Copyright 2026 Joshua Ubaga
+
+MedGuard is made of two parts under two different licences.
+
+--------------------------------------------------------------------------------
+1. Source code, configuration and documentation -- Apache License 2.0
+--------------------------------------------------------------------------------
+
+Everything in this repository not listed in part 2 is licensed under the Apache
+License, Version 2.0. See LICENSE, or <https://www.apache.org/licenses/LICENSE-2.0>.
+
+--------------------------------------------------------------------------------
+2. Clinical data and the models trained on it -- CC BY-NC-SA 4.0
+--------------------------------------------------------------------------------
+
+  mobile/assets/db/medguard.db          the bundled clinical database
+  mobile/assets/ml/                     the on-device severity model
+  ml_pipeline/models/                   trained models and their metadata
+  ml_pipeline/data/external/ddinter/    DDInter source files
+
+These are licensed under Creative Commons Attribution-NonCommercial-ShareAlike
+4.0 International (CC BY-NC-SA 4.0). They may be used, shared and adapted for
+non-commercial purposes, with attribution, and adaptations must carry the same
+licence. See DATA_LICENSE.md, or <https://creativecommons.org/licenses/by-nc-sa/4.0/>.
+
+The terms follow from the sources the data is derived from:
+
+  DrugBank 6.0 (CC BY-NC 4.0)
+    Knox C, et al. DrugBank 6.0: the DrugBank Knowledgebase for 2024.
+    Nucleic Acids Research 52(D1):D1265-D1275, 2024. doi:10.1093/nar/gkad976
+
+  DDInter 2.0 (CC BY-NC-SA 4.0)
+    Tian Y, et al. DDInter 2.0: an enhanced drug interaction resource with
+    expanded data coverage, new interaction types, and improved user interface.
+    Nucleic Acids Research 53(D1):D1356-D1362, 2025. doi:10.1093/nar/gkae726
+
+  RxNorm -- drug identifiers from the U.S. National Library of Medicine,
+    retrieved through the RxNav API.
+
+  openFDA -- adverse-event co-report counts from the U.S. Food and Drug
+    Administration, public domain.
+
+The release builds of the app on the GitHub Releases page contain the bundled
+database, so they are distributed on the same terms: free, and not for
+commercial use.
+
+--------------------------------------------------------------------------------
+Clinical disclaimer
+--------------------------------------------------------------------------------
+
+MedGuard is decision support, not medical advice. It does not diagnose or
+prescribe, and it cannot see dose, renal or hepatic function, or why a medicine
+was prescribed. It is not a certified medical device and has not been assessed
+by any regulator. Use it at your own risk; see sections 7 and 8 of LICENSE and
+the corresponding disclaimers of CC BY-NC-SA 4.0.

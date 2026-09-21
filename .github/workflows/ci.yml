@@ -1,0 +1,46 @@
+name: CI
+
+# Runs the backend and mobile test suites on every push and pull request,
+# and blocks merges when either fails.
+on:
+  # Every branch on push, so work in progress is checked before it reaches a
+  # pull request; pull requests into main as well.
+  push:
+  pull_request:
+    branches: [main]
+
+jobs:
+  backend:
+    name: Backend (pytest)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r backend/requirements.txt
+          pip install pytest
+      - name: Run tests
+        # Runs against the clinical database and served model in the repository.
+        run: python -m pytest backend/tests -q -rs
+
+  mobile:
+    name: Mobile (flutter analyze + test)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: mobile
+    steps:
+      - uses: actions/checkout@v5
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          # Pinned to the SDK the app is developed on, so a new stable release
+          # cannot fail CI with lints nobody has seen locally.
+          flutter-version: 3.41.9
+      - run: flutter pub get
+      - run: flutter analyze
+      - run: flutter test

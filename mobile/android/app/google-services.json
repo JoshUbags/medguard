@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "745899760331",
+    "project_id": "medguard-fa943",
+    "storage_bucket": "medguard-fa943.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:745899760331:android:8ad033e820e7572381994e",
+        "android_client_info": {
+          "package_name": "com.medguard.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "745899760331-6iq0u1k5oiu3oklbdpo3k3ggu85vumcs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.medguard.app",
+            "certificate_hash": "1e19cce013fb67a2c47ce18336d4a50860cc2e4a"
+          }
+        },
+        {
+          "client_id": "745899760331-esqrqtu5m0d8cs32ojg4p0292jsvqpki.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.medguard.app",
+            "certificate_hash": "32b88a098f9bd8dcabe74f568ce1097003e3ba9f"
+          }
+        },
+        {
+          "client_id": "745899760331-5282oa56qbt372k2au8jkthern4dpbre.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9_ERQxaRU7FfN9-75pYaUrOMqmuDY0_s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "745899760331-5282oa56qbt372k2au8jkthern4dpbre.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "745899760331-c7bd8avis6huna4rqu5k50k2q4marobl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.mobile"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

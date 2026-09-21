@@ -1,0 +1,24 @@
+rules_version = '2';
+
+// MedGuard Firestore security rules.
+//
+// The shipped app stores all medication/allergy data in on-device SQLite and
+// uses Firebase only for authentication, so no collections are read or written
+// today. These rules are the locked default: deny everything, and — should
+// cloud sync ever be added — only let a signed-in user touch documents under
+// their own uid. They must never be left in Firebase's open "test mode".
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // A user may only read/write their own profile subtree.
+    match /users/{userId}/{document=**} {
+      allow read, write: if request.auth != null
+                         && request.auth.uid == userId;
+    }
+
+    // Everything else is denied by default.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

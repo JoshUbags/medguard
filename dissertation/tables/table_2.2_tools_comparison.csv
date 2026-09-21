@@ -1,0 +1,15 @@
+Tool/System,Platform,Access Model,Evidence Transparency,Key Strengths,Key Weaknesses
+Lexicomp (Lexi-Interact),"Web, mobile, EHR",Subscription (institutional/ individual),"High (detailed monographs, references, mechanism explanations)",High accuracy; detailed clinical monographs; widely trusted,Expensive; requires internet; editorial severity assignment
+IBM Micromedex,"Web, EHR-integrated",Subscription (enterprise),"High (evidence levels, onset timing, references)",Highly comprehensive; strong evidence grading; high sensitivity,Enterprise pricing; high alert volume; not standalone
+Medscape,"Web, mobile app",Free,Low (brief descriptions; limited references),Free access; no registration required; patient-friendly,Limited clinical depth; inconsistent documentation; internet required
+Epocrates,"Mobile app, web",Freemium,Medium (basic monographs; expanded in premium),Mobile-first design; good usability; free tier available,US-centric drug names; premium paywall; partial offline only
+First DataBank (FDB),EHR-embedded,Institutional OEM,Medium (knowledge base module),Widely integrated into EHR systems; lower alert burden,Not standalone; requires institutional infrastructure
+Clinical Pharmacology,Web,Subscription,High (detailed evidence-based monographs),Broad scope coverage; strong clinical depth,Subscription-only; web-based only; no offline access
+Drugs.com,"Web, mobile app",Free (ad-supported),Low–Medium (consumer-oriented summaries),Free; easy to use; broad public access,Limited clinical detail; ad-supported; no offline mode
+UpToDate,"Web, mobile app",Subscription,"High (systematic reviews, evidence synthesis)",Highly trusted clinical resource; comprehensive reviews,Not a dedicated DDI checker; subscription required
+PEPID,"Web, mobile app",Subscription,Medium (integrated clinical reference content),Strong emergency medicine focus; broad scope,Subscription required; limited DDI-specific depth
+DynaMed,"Web, mobile app",Subscription (institutional),High (systematic evidence reviews),Evidence-based; regularly updated,Not DDI-specific; subscription required
+Stockley’s,"Web, print",Subscription,Very High (gold-standard monographs),Considered gold-standard DDI reference; detailed analysis,Not real-time checker; expensive; limited portability
+DDInter 2.0,Web,Free/Open-access,"Medium (mechanisms, severity labels, alternatives)",Open-access; pharmacist-reviewed; large DDI dataset,Web-only; no mobile app; no offline functionality
+Medi-Span,EHR/pharmacy systems,Institutional OEM,Medium (knowledge base module),Broad pharmacy deployment; integrated workflow,Not standalone; requires institutional systems
+This Project,"Mobile (Flutter, cross-platform)",Free (open-source),Medium (mechanism detail + ML confidence + guidance),Offline-first; free; ML-assisted severity prediction; patient-facing,Prototype stage; not clinically validated; limited to DrugBank coverage; limited dataset coverage compared with established commercial knowledge bases.

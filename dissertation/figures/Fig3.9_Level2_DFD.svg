@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="800" viewBox="0 0 1500 800" font-family="Arial, Helvetica, sans-serif">
+<defs><marker id="ah" markerWidth="11" markerHeight="11" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#000"/></marker></defs>
+<rect width="1500" height="800" fill="#FFFFFF"/>
+<g fill="none" stroke="#000" stroke-width="2">
+<!-- stores -->
+<rect x="300" y="110" width="300" height="80"/><line x1="345" y1="110" x2="345" y2="190"/>
+<rect x="980" y="110" width="300" height="80"/><line x1="1025" y1="110" x2="1025" y2="190"/>
+<!-- entities -->
+<rect x="40" y="330" width="200" height="90"/>
+<rect x="40" y="560" width="200" height="90"/>
+<!-- processes (rounded) -->
+<rect x="300" y="330" width="280" height="90" rx="20"/>
+<rect x="640" y="330" width="280" height="90" rx="20"/>
+<rect x="980" y="330" width="300" height="90" rx="20"/>
+<rect x="640" y="560" width="280" height="90" rx="20"/>
+<rect x="300" y="560" width="280" height="90" rx="20"/>
+</g>
+<g fill="#000" font-size="22" font-weight="700" text-anchor="middle">
+<text x="325" y="156">D1</text><text x="450" y="156" font-size="20">Reference DB</text>
+<text x="1005" y="156">D4</text><text x="1155" y="156" font-size="20">Prediction cache</text>
+<text x="140" y="382">Drug pair</text>
+<text x="140" y="612">Safety verdict</text>
+<text x="440" y="382">4.2 Rule lookup</text>
+<text x="780" y="382">4.1 Build features</text>
+<text x="1130" y="382">4.3 Cache check</text>
+<text x="780" y="612">4.4 Predict</text>
+<text x="440" y="612">4.5 Aggregate tier</text>
+</g>
+<g fill="none" stroke="#000" stroke-width="2">
+<line x1="240" y1="375" x2="298" y2="375" marker-end="url(#ah)"/>
+<line x1="440" y1="330" x2="440" y2="192" marker-end="url(#ah)"/>
+<line x1="580" y1="375" x2="638" y2="375" marker-end="url(#ah)"/>
+<line x1="920" y1="375" x2="978" y2="375" marker-end="url(#ah)"/>
+<line x1="1130" y1="330" x2="1130" y2="192" marker-end="url(#ah)"/>
+<path d="M1130,420 V505 H780 V558" marker-end="url(#ah)"/>
+<line x1="640" y1="605" x2="582" y2="605" marker-end="url(#ah)"/>
+<line x1="300" y1="605" x2="242" y2="605" marker-end="url(#ah)"/>
+</g>
+<g fill="#000" font-size="18" font-style="italic">
+<text x="245" y="365">pair</text>
+<text x="452" y="270">lookup</text>
+<text x="588" y="365">no hit</text>
+<text x="928" y="365">vector</text>
+<text x="1142" y="270">check</text>
+<text x="800" y="500">cache miss</text>
+<text x="588" y="595">risk tier</text>
+<text x="248" y="595">verdict</text>
+</g>
+</svg>

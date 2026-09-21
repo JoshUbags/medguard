@@ -1,0 +1,93 @@
+name: mobile
+description: "MedGuard — offline drug interaction checker."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  firebase_core: ^4.6.0
+  firebase_auth: ^6.4.0
+  # Native Google account picker (Credential Manager on Android, the system
+  # sheet on iOS). We exchange its ID token for a Firebase credential — this is
+  # the reliable path; the old web/Custom-Tab `signInWithProvider` flow was the
+  # source of the "doesn't finish" Google sign-ins.
+  google_sign_in: ^7.2.0
+  shared_preferences: ^2.3.0
+  google_fonts: ^8.0.2
+  # sqflite_sqlcipher provides the full sqflite API AND honours the SQLCipher
+  # `password`. Do NOT also depend on plain `sqflite`: both register the same
+  # native channel and the plain one silently drops the key (plaintext DB).
+  sqflite_sqlcipher: ^3.1.0+1
+  path: ^1.9.1
+  path_provider: ^2.1.4
+  flutter_local_notifications: ^21.0.0
+  timezone: ^0.11.0
+  flutter_timezone: ^5.0.2
+  qr_flutter: ^4.1.0
+  pdf: ^3.12.0
+  printing: ^5.14.3
+  share_plus: ^13.1.0
+  local_auth: ^3.0.1
+  flutter_secure_storage: ^10.3.1
+  crypto: ^3.0.7
+  tflite_flutter: ^0.12.1
+  http: ^1.6.0
+  home_widget: ^0.7.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  sqflite_common_ffi: ^2.4.0+3
+  flutter_launcher_icons: ^0.14.4
+
+# Launcher icon (MedGuard shield mark). Regenerate after changing the PNGs:
+#   dart run flutter_launcher_icons
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/logos/MedGuard/app_icon.png"
+  adaptive_icon_background: "#016359"
+  adaptive_icon_foreground: "assets/logos/MedGuard/app_icon_foreground.png"
+  remove_alpha_ios: true
+
+hooks:
+  user_defines:
+    sqlite3:
+      source: system
+      name: sqlite3
+      name_windows: winsqlite3
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    # Bundled Inter font files — google_fonts loads these from the asset
+    # bundle so the app NEVER fetches fonts over the network (offline-first;
+    # a missing connection must not block startup). Regenerate with
+    # tool/fetch_inter_fonts.py if weights change.
+    - google_fonts/
+    # Onboarding photography — only the images actually rendered are bundled.
+    # 15.jpg = Welcome hero; 01-08 feed the interaction-review depth cards and
+    # the medication-context collage (see welcome_assets.dart).
+    - assets/images/onboarding/01.jpg
+    - assets/images/onboarding/02.jpg
+    - assets/images/onboarding/03.jpg
+    - assets/images/onboarding/04.jpg
+    - assets/images/onboarding/05.jpg
+    - assets/images/onboarding/06.jpg
+    - assets/images/onboarding/08.jpg
+    - assets/images/onboarding/15.jpg
+    - assets/images/mainshell/01.jpg
+    - assets/images/mainshell/02.jpg
+    - assets/images/mainshell/03.jpg
+    - assets/logos/apple.png
+    - assets/logos/google.png
+    - assets/db/medguard.db
+    # On-device severity model, exported by ml_pipeline/src/inference/convert_tflite.py.
+    - assets/ml/

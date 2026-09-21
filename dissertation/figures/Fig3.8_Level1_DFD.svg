@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1480" height="940" viewBox="0 0 1480 940" font-family="Arial, Helvetica, sans-serif">
+<defs><marker id="ah" markerWidth="11" markerHeight="11" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#000"/></marker></defs>
+<rect width="1480" height="940" fill="#FFFFFF"/>
+<g fill="none" stroke="#000" stroke-width="2">
+<rect x="60" y="120" width="220" height="90"/>
+<rect x="60" y="420" width="220" height="120"/>
+<rect x="520" y="120" width="340" height="90"/>
+<rect x="520" y="250" width="340" height="90"/>
+<rect x="520" y="380" width="340" height="90"/>
+<rect x="520" y="510" width="340" height="90"/>
+<rect x="520" y="640" width="340" height="90"/>
+<rect x="520" y="770" width="340" height="90"/>
+<rect x="1100" y="510" width="360" height="80"/><line x1="1180" y1="510" x2="1180" y2="590"/>
+<rect x="1100" y="640" width="360" height="80"/><line x1="1180" y1="640" x2="1180" y2="720"/>
+<rect x="1100" y="770" width="360" height="80"/><line x1="1180" y1="770" x2="1180" y2="850"/>
+</g>
+<g fill="#000" font-size="22" font-weight="700" text-anchor="middle">
+<text x="170" y="172">Firebase</text><text x="170" y="488">User</text>
+<text x="690" y="172">1  Authentication</text><text x="690" y="302">2  Drug search</text><text x="690" y="432">3  Medication mgmt</text><text x="690" y="562">4  Interaction check</text><text x="690" y="692">5  Report generation</text><text x="690" y="822">6  Reminders</text>
+<text x="1140" y="558">D1</text><text x="1320" y="558">Reference DB</text>
+<text x="1140" y="688">D2</text><text x="1320" y="688">User DB</text>
+<text x="1140" y="818">D3</text><text x="1320" y="818">Check-log</text>
+</g>
+<g fill="none" stroke="#000" stroke-width="2">
+<line x1="280" y1="165" x2="518" y2="165" marker-end="url(#ah)"/>
+<path d="M280,450 H400 V295 H518" marker-end="url(#ah)"/>
+<path d="M280,470 H450 V425 H518" marker-end="url(#ah)"/>
+<path d="M280,510 H360 V815 H518" marker-end="url(#ah)"/>
+<line x1="690" y1="470" x2="690" y2="508" marker-end="url(#ah)"/>
+<line x1="860" y1="555" x2="1098" y2="550" marker-end="url(#ah)"/>
+<line x1="690" y1="600" x2="690" y2="638" marker-end="url(#ah)"/>
+<line x1="860" y1="685" x2="1098" y2="680" marker-end="url(#ah)"/>
+<path d="M860,700 H1000 V810 H1098" marker-end="url(#ah)"/>
+</g>
+<g fill="#000" font-size="18" font-style="italic">
+<text x="330" y="155">credentials</text>
+<text x="410" y="285">drug query</text>
+<text x="460" y="415">add / remove</text>
+<text x="368" y="640">schedule</text>
+<text x="700" y="497">pairs</text>
+<text x="905" y="540">read facts</text>
+<text x="700" y="627">findings</text>
+<text x="905" y="670">write history</text>
+<text x="1010" y="800">log check</text>
+</g>
+</svg>

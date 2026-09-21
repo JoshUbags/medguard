@@ -1,0 +1,10 @@
+{
+  "task": "triclass",
+  "classes": [0, 1, 2],
+  "labels": { "0": "low", "1": "moderate", "2": "high" },
+  "tier_map": { "0": 0, "1": 1, "2": 2, "3": 2 },
+  "class_weight": "balanced",
+  "winning_algorithm": "RandomForest",
+  "n_features": 27,
+  "decision_thresholds": { "high": 0.40, "low": 0.75 }
+}

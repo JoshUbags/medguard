@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="1560" viewBox="0 0 1680 1560" font-family="Arial, Helvetica, sans-serif">
+<defs><marker id="ah" markerWidth="11" markerHeight="11" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#000"/></marker></defs>
+<rect width="1680" height="1560" fill="#FFFFFF"/>
+<g fill="#000" text-anchor="middle" font-size="24" font-weight="700"><text x="410" y="70">IDENTIFIED RESEARCH GAP</text><text x="1270" y="70">MEDGUARD DESIGN RESPONSE</text></g>
+<g stroke="#000" stroke-width="2"><line x1="60" y1="90" x2="760" y2="90"/><line x1="920" y1="90" x2="1620" y2="90"/></g>
+<g fill="none" stroke="#000" stroke-width="2">
+<rect x="60" y="130" width="700" height="180"/><rect x="60" y="360" width="700" height="180"/><rect x="60" y="590" width="700" height="180"/><rect x="60" y="820" width="700" height="180"/><rect x="60" y="1050" width="700" height="180"/><rect x="60" y="1280" width="700" height="180"/>
+<rect x="920" y="130" width="700" height="180"/><rect x="920" y="360" width="700" height="180"/><rect x="920" y="590" width="700" height="180"/><rect x="920" y="820" width="700" height="180"/><rect x="920" y="1050" width="700" height="180"/><rect x="920" y="1280" width="700" height="180"/>
+</g>
+<g fill="#000" font-size="24" font-weight="700">
+<text x="90" y="205">No offline-capable tool</text><text x="90" y="435">ML severity not on mobile</text><text x="90" y="665">Provider-only outputs</text><text x="90" y="895">Subscription cost barriers</text><text x="90" y="1125">No Nigeria-context tool</text><text x="90" y="1355">Pharmacovigilance unused</text>
+<text x="950" y="205">Bundled SQLite database</text><text x="950" y="435">Compact TFLite + Flask RF</text><text x="950" y="665">Patient-accessible alerts</text><text x="950" y="895">Free, open-source stack</text><text x="950" y="1125">Built &amp; evaluated in Abeokuta</text><text x="950" y="1355">OpenFDA FAERS signals</text>
+</g>
+<g fill="#000" font-size="20">
+<text x="90" y="250">Commercial checkers need internet</text><text x="90" y="480">Deep models exceed phone compute</text><text x="90" y="710">Patients cannot read raw alerts</text><text x="90" y="940">Lexicomp / Micromedex costly</text><text x="90" y="1170">Tools use US / EU nomenclature</text><text x="90" y="1400">Severity set by editorial consensus</text>
+<text x="950" y="250">Every core check runs offline</text><text x="950" y="480">On-device and cloud inference</text><text x="950" y="710">Plain-language, colour-coded</text><text x="950" y="940">Open data: DrugBank, RxNorm</text><text x="950" y="1170">RxNorm-normalised, SUS-tested</text><text x="950" y="1400">Co-report counts inform severity</text>
+</g>
+<g fill="none" stroke="#000" stroke-width="2" stroke-dasharray="7 6">
+<line x1="760" y1="220" x2="918" y2="220" marker-end="url(#ah)"/><line x1="760" y1="450" x2="918" y2="450" marker-end="url(#ah)"/><line x1="760" y1="680" x2="918" y2="680" marker-end="url(#ah)"/><line x1="760" y1="910" x2="918" y2="910" marker-end="url(#ah)"/><line x1="760" y1="1140" x2="918" y2="1140" marker-end="url(#ah)"/><line x1="760" y1="1370" x2="918" y2="1370" marker-end="url(#ah)"/>
+</g>
+</svg>

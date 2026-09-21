@@ -1,0 +1,26 @@
+# Build context is the repository root (see backend/Dockerfile). Keep it small.
+.git
+.venv
+.idea
+.vscode
+**/__pycache__
+**/*.pyc
+**/.pytest_cache
+backend/*.db
+dissertation
+docs
+data_pipeline
+ml_pipeline/data
+ml_pipeline/src
+ml_pipeline/reports
+mobile/android
+mobile/ios
+mobile/linux
+mobile/macos
+mobile/web
+mobile/windows
+mobile/lib
+mobile/test
+mobile/tool
+mobile/build
+mobile/.dart_tool

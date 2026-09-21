@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1660" height="720" viewBox="0 0 1660 720" font-family="Arial, Helvetica, sans-serif">
+<defs><marker id="ah" markerWidth="11" markerHeight="11" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#000"/></marker></defs>
+<rect width="1660" height="720" fill="#FFFFFF"/>
+<g fill="none" stroke="#000" stroke-width="2">
+<rect x="60" y="130" width="420" height="290"/><line x1="90" y1="330" x2="450" y2="330"/>
+<rect x="620" y="130" width="420" height="290"/><line x1="650" y1="330" x2="1010" y2="330"/>
+</g>
+<rect x="1180" y="130" width="420" height="290" fill="none" stroke="#000" stroke-width="3.5"/><line x1="1210" y1="330" x2="1570" y2="330" stroke="#000" stroke-width="2"/>
+<g fill="#000" text-anchor="middle">
+<text x="270" y="195" font-size="20" font-weight="700">LEVEL 1</text><text x="270" y="255" font-size="26" font-weight="700">Basic Binary Alerts</text><text x="270" y="295" font-size="21">Interaction = yes / no</text><text x="270" y="382" font-size="20" font-weight="700">~90% of alerts overridden</text>
+<text x="830" y="195" font-size="20" font-weight="700">LEVEL 2</text><text x="830" y="255" font-size="26" font-weight="700">Severity-Graded Alerts</text><text x="830" y="295" font-size="21">Rule-based severity tiers</text><text x="830" y="382" font-size="20" font-weight="700">Most current DDI systems</text>
+<text x="1390" y="195" font-size="20" font-weight="700">LEVEL 3</text><text x="1390" y="255" font-size="26" font-weight="700">ML-Enhanced Severity</text><text x="1390" y="295" font-size="21">Random-Forest learned risk</text><text x="1390" y="382" font-size="20" font-weight="700">MedGuard — this project</text>
+</g>
+<g fill="none" stroke="#000" stroke-width="2">
+<line x1="480" y1="275" x2="618" y2="275" marker-end="url(#ah)"/>
+<line x1="1040" y1="275" x2="1178" y2="275" marker-end="url(#ah)"/>
+<line x1="60" y1="640" x2="1600" y2="640" marker-end="url(#ah)"/>
+</g>
+<g fill="#000" text-anchor="middle" font-size="18" font-style="italic"><text x="549" y="258">+ severity tiers</text><text x="1109" y="258">+ learned risk</text></g>
+<text x="60" y="618" font-size="19" font-style="italic" fill="#000">Increasing decision-support maturity</text>
+</svg>
